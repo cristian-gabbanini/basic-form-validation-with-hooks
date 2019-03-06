@@ -7,7 +7,6 @@ function useValidator(initialValue, validators = []) {
     errors.current = validators
       .map(validator => validator(state))
       .filter(error => error);
-    console.log(errors);
     setFieldValue(state);
   }
 
