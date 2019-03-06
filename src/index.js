@@ -21,7 +21,7 @@ function App() {
         onChange={handleInputChange}
         value={firstName}
       />
-      <ul class="errors">
+      <ul className="errors">
         {errors.current.length > 0
           ? errors.current.map(error => <li key={error}>{error}</li>)
           : ""}
