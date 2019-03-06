@@ -5,7 +5,7 @@ import { isRequired, minLenght } from "./validators";
 import "./styles.css";
 
 function App() {
-  const [firstName, errors, setFirstName] = useValidator(firstName, [
+  const [firstName, errors, setFirstName] = useValidator("", [
     isRequired,
     minLenght(5)
   ]);
@@ -21,7 +21,7 @@ function App() {
         onChange={handleInputChange}
         value={firstName}
       />
-      <ul>
+      <ul class="errors">
         {errors.current.length > 0
           ? errors.current.map(error => <li key={error}>{error}</li>)
           : ""}

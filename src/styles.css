@@ -1,4 +1,22 @@
 .App {
   font-family: sans-serif;
-  text-align: center;
+  text-align: left;
+}
+
+input[type="text"] {
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  padding: 0.75em;
+}
+
+ul.errors {
+  color: crimson;
+  list-style-type: none;
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+ul > li {
+  margin: 0;
+  padding: 0.25 0;
 }
